@@ -4,16 +4,14 @@ Web estática construida desde 0 para presentar el juego, con dos requisitos
 fijos: **links de descarga de todas las versiones** y **todas las releases
 visibles** (historial completo, no solo la última).
 
-## Fase 0 — Decisiones (antes de picar código)
+## Fase 0 — Decisiones (resueltas)
 
-- [ ] Stack: HTML + CSS + JS vanilla, sin build ni dependencias (se abre con
-  doble-click y se hostea en cualquier lado).
-- [ ] Dónde viven los zips: definir hosting de archivos (opciones: GitHub
-  Releases, itch.io, Netlify/Vercel/Cloudflare Pages junto a la web).
-- [ ] Dónde vive la web: mismo hosting que los zips o separado.
-- [ ] Fuente de verdad de versiones: `versiones.json` (sección Descargas) y
-  `releases.json` (sección Releases), generados a mano o desde
-  `../CHANGELOG.md` + GitHub Releases.
+- [x] Stack: React + Tailwind con Vite (rebuild a pedido: página más profesional).
+- [x] Dónde viven los zips: GitHub Releases del repo del juego.
+- [x] Dónde vive la web: Vercel (deploy automático con cada push a `main`).
+- [x] Fuente de verdad de versiones: `public/data/versiones.json` (Descargas) y
+  `public/data/releases.json` (Releases), actualizados por
+  `tools/actualizar_web.py` desde el `CHANGELOG.md` + GitHub Releases.
 
 ## Fase 1 — Esqueleto
 

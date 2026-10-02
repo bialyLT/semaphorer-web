@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-asfalto: #14151a;
+  --color-panel: #1e2027;
+  --color-cordon: #f2b234;
+  --color-hierba: #43d17c;
+  --color-freno: #ff5147;
+  --color-tinta: #f4f1e6;
+  --color-gris: #a9a79b;
+  --color-linea: #33353f;
+}
+
+body {
+  background: var(--color-asfalto);
+  color: var(--color-tinta);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-cordon);
+  outline-offset: 2px;
+}
+
+/* Senda peatonal divisoria */
+.senda {
+  height: 10px;
+  background: repeating-linear-gradient(90deg, var(--color-tinta) 0 46px, transparent 46px 70px);
+  opacity: 0.22;
+}
+
+/* Semáforo: cicla rojo -> verde como en el juego */
+.luz { background: #2a2b32; }
+.luz.roja { animation: ciclo-rojo 9s infinite; }
+.luz.amarilla { animation: ciclo-amarilla 9s infinite; }
+.luz.verde { animation: ciclo-verde 9s infinite; }
+
+@keyframes ciclo-rojo { 0%, 55% { background: var(--color-freno); } 60%, 100% { background: #2a2b32; } }
+@keyframes ciclo-amarilla { 0%, 55%, 70%, 100% { background: #2a2b32; } 60%, 65% { background: var(--color-cordon); } }
+@keyframes ciclo-verde { 0%, 65% { background: #2a2b32; } 70%, 100% { background: var(--color-hierba); } }
+
+audio { width: 100%; max-width: 480px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .luz { animation: none; }
+  .luz.roja { background: var(--color-freno); }
+}

@@ -1,0 +1,11 @@
+# Build output (Vercel compila desde el código)
+dist/
+
+# Dependencias
+node_modules/
+
+# OS / editores
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
