@@ -1,23 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Semaphorer: laburá en el semáforo. Limpiavidrios, malabares o venta ambulante. Juego hecho con Godot." />
-    <meta name="theme-color" content="#14151a" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Semaphorer — laburá en el semáforo" />
-    <meta property="og:description" content="Limpiavidrios, malabares o venta ambulante en un cruce latino. Descargá gratis para Windows y Linux." />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Semaphorer — laburá en el semáforo" />
-    <meta name="twitter:description" content="Limpiavidrios, malabares o venta ambulante en un cruce latino. Descargá gratis para Windows y Linux." />
-    <meta name="referrer" content="no-referrer" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; media-src 'self'; img-src 'self'; connect-src 'self';" />
-    <title>Semaphorer — laburá en el semáforo</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Semaphorer: laburá en el semáforo. Limpiavidrios, malabares o venta ambulante. Juego hecho con Godot.">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; media-src 'self'; img-src 'self'; connect-src 'self';">
+<title>Semaphorer — laburá en el semáforo</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="hero">
+  <div class="semaforo" aria-hidden="true"><span class="luz roja"></span><span class="luz amarilla"></span><span class="luz verde"></span></div>
+  <div>
+    <h1>Semaphorer</h1>
+    <p class="bajada">Laburá en el semáforo: limpiá vidrios, hacé malabares o vendé. Cobrá en rojo, escondé la plata y que no te agarre la policía.</p>
+    <p><span class="version" id="version-actual">v…</span></p>
+    <p><a class="boton" id="boton-descargar" href="#">Descargar para Windows</a></p>
+  </div>
+</header>
+
+<div class="senda" aria-hidden="true"></div>
+
+<main>
+  <section id="laburo">
+    <h2>Elegí tu laburo</h2>
+    <ul class="oficios">
+      <li><strong>Limpiavidrios.</strong> Seis toques con ritmo por parabrisas. La esponja y el balde pagan mejor.</li>
+      <li><strong>Malabares.</strong> Cinco actos por función frente al auto. Buena función, buena propina.</li>
+      <li><strong>Venta ambulante.</strong> Tres ofertas por venta, ritmo de pregón. Rápida y chica.</li>
+    </ul>
+    <p>Los apurados se van si tardás, los enojados pueden no pagar y los amables dan propina. En verde se pierde el progreso.</p>
+  </section>
+
+  <section id="controles">
+    <h2>Controles</h2>
+    <table>
+      <tbody>
+        <tr><th scope="row">WASD / flechas</th><td>Moverse</td></tr>
+        <tr><th scope="row">Mouse</th><td>Mirar (click para capturar)</td></tr>
+        <tr><th scope="row">E</th><td>Trabajar junto al auto en rojo</td></tr>
+        <tr><th scope="row">Espacio</th><td>Saltar (subir a la vereda)</td></tr>
+        <tr><th scope="row">F</th><td>Tienda de mejoras</td></tr>
+        <tr><th scope="row">G</th><td>Guardar plata en la mochila azul</td></tr>
+        <tr><th scope="row">I</th><td>Ver mochila</td></tr>
+        <tr><th scope="row">V</th><td>Cambiar cámara</td></tr>
+        <tr><th scope="row">Esc</th><td>Pausa</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="descargas">
+    <h2>Descargas</h2>
+    <p id="descargas-estado">Cargando versiones…</p>
+    <table id="tabla-versiones" hidden>
+      <thead><tr><th scope="col">Versión</th><th scope="col">Fecha</th><th scope="col">Plataforma</th><th scope="col">Tamaño</th><th scope="col">Descarga</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section id="releases">
+    <h2>Releases</h2>
+    <p id="releases-estado">Cargando historial…</p>
+    <div id="lista-releases"></div>
+  </section>
+
+  <section id="musica">
+    <h2>La música</h2>
+    <p>Tema del menú, generado para el juego. En la partida suena otro con más ritmo.</p>
+    <audio controls preload="none" src="audio/musica_menu.wav"></audio>
+  </section>
+</main>
+
+<footer>
+  <p>Semaphorer, hecho con Godot. <span id="version-pie"></span></p>
+</footer>
+
+<script src="sitio.js"></script>
+</body>
 </html>
