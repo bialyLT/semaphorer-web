@@ -29,6 +29,17 @@ function Semaforo() {
   )
 }
 
+function masNueva(a, b) {
+  const pa = a.split('.').map(Number)
+  const pb = b.split('.').map(Number)
+  for (let i = 0; i < 3; i++) {
+    if ((pa[i] || 0) !== (pb[i] || 0)) return (pa[i] || 0) > (pb[i] || 0) ? a : b
+  }
+  return a
+}
+
+const WPP = 'https://wa.me/5493764635099?text=Hola%2C%20tengo%20una%20consulta%20sobre%20Semaphorer'
+
 function BotonDescarga({ v, principal }) {
   if (!v) return null
   if (!v.url) {
@@ -83,6 +94,7 @@ function App() {
   const { data: releases, error: errorReleases } = useJson('data/releases.json')
 
   const ultima = versiones?.find((v) => v.destacado) ?? versiones?.[0]
+  const ultimaVersion = versiones?.map((v) => v.version).reduce((a, b) => masNueva(a, b))
   const win = versiones?.find((v) => v.version === ultima?.version && !v.plataforma.startsWith('Linux'))
   const lin = versiones?.find((v) => v.version === ultima?.version && v.plataforma.startsWith('Linux'))
 
@@ -99,6 +111,7 @@ function App() {
             <a className="hover:text-tinta" href="#controles">Controles</a>
             <a className="hover:text-tinta" href="#descargas">Descargas</a>
             <a className="hover:text-tinta" href="#releases">Releases</a>
+            <a className="hover:text-tinta" href="#soporte">Soporte</a>
           </div>
           {ultima && <span className="rounded-md border border-linea bg-panel px-2.5 py-0.5 font-mono text-sm text-cordon">v{ultima.version}</span>}
         </div>
@@ -191,7 +204,7 @@ function App() {
                   {versiones.map((v, i) => (
                     <tr key={v.version + v.plataforma} className={i % 2 ? 'bg-panel/50' : ''}>
                       <td className="whitespace-nowrap px-4 py-3 font-mono font-bold text-cordon">
-                        v{v.version}{v.destacado ? ' (última)' : ''}
+                        v{v.version}{v.version === ultimaVersion ? ' (última)' : ''}
                       </td>
                       <td className="px-4 py-3 text-gris">{v.fecha}</td>
                       <td className="px-4 py-3">{v.plataforma}</td>
@@ -242,6 +255,21 @@ function App() {
             Tema del menú, generado para el juego. En la partida suena otro con más ritmo.
           </p>
           <audio controls preload="none" src={`${BASE}audio/musica_menu.wav`} className="mt-3" />
+        </section>
+
+        <section id="soporte" className="pt-12">
+          <h2 className="border-l-8 border-cordon pl-3 text-3xl font-bold">Soporte</h2>
+          <p className="mt-4 max-w-2xl text-gris">
+            ¿El juego no arranca, encontraste un bug o tenés una idea? Escribime
+            por WhatsApp y lo vemos.
+          </p>
+          <a
+            href={WPP}
+            rel="noopener"
+            className="mt-4 inline-block rounded-xl bg-hierba px-6 py-3 font-bold text-asfalto hover:brightness-110"
+          >
+            Hablar por WhatsApp
+          </a>
         </section>
       </main>
 
