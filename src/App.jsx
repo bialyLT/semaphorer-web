@@ -265,6 +265,7 @@ function App() {
           </p>
           <a
             href={WPP}
+            target="_blank"
             rel="noopener"
             className="mt-4 inline-block rounded-xl bg-hierba px-6 py-3 font-bold text-asfalto hover:brightness-110"
           >
@@ -277,7 +278,7 @@ function App() {
         <div className="mx-auto max-w-6xl px-5 py-6 text-gris">
           Semaphorer, hecho con Godot.
           {ultima && <> Versión actual: v{ultima.version}.</>}
-          {' '}Código del juego en <a className="text-cordon hover:underline" href="https://github.com/bialyLT/semaphorer" rel="noopener">GitHub</a>.
+          {' '}Código del juego en <a className="text-cordon hover:underline" href="https://github.com/bialyLT/semaphorer" target="_blank" rel="noopener">GitHub</a>.
         </div>
       </footer>
     </div>
