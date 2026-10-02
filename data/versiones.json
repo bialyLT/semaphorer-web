@@ -1,0 +1,22 @@
+[
+  {
+    "version": "1.2.0",
+    "fecha": "2026-10-02",
+    "plataforma": "Windows 10/11 64-bit",
+    "archivo": "Semaphorer-windows-v1.2.0.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.2.0/Semaphorer-windows-v1.2.0.zip",
+    "tamanio_mb": 65,
+    "notas": "Tutorial jugable por objetivos y música de fondo.",
+    "destacado": true
+  },
+  {
+    "version": "1.2.0",
+    "fecha": "2026-10-02",
+    "plataforma": "Linux 64-bit",
+    "archivo": "Semaphorer-linux-v1.2.0.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.2.0/Semaphorer-linux-v1.2.0.zip",
+    "tamanio_mb": 59,
+    "notas": "Tutorial jugable por objetivos y música de fondo.",
+    "destacado": false
+  }
+]
