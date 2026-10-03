@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { iniciarFaviconSemaforo } from './favicon.js'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -90,6 +91,7 @@ const CONTROLES = [
 ]
 
 function App() {
+  useEffect(() => iniciarFaviconSemaforo(), [])
   const { data: versiones } = useJson('data/versiones.json')
   const { data: releases, error: errorReleases } = useJson('data/releases.json')
 
