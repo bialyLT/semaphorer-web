@@ -67,7 +67,7 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.7/Semaphorer-windows-v1.5.7.zip",
     "tamanio_mb": 65,
     "notas": "Las cinemáticas ahora se saltean manteniendo presionado.",
-    "destacado": true
+    "destacado": false
   },
   {
     "version": "1.5.7",
@@ -77,6 +77,26 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.7/Semaphorer-linux-v1.5.7.zip",
     "tamanio_mb": 59,
     "notas": "Las cinemáticas ahora se saltean manteniendo presionado.",
+    "destacado": false
+  },
+  {
+    "version": "1.6.0",
+    "fecha": "2026-10-03",
+    "plataforma": "Windows 10/11 64-bit",
+    "archivo": "Semaphorer-windows-v1.6.0.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.6.0/Semaphorer-windows-v1.6.0.zip",
+    "tamanio_mb": 65,
+    "notas": "Nuevo minimapa en la esquina: muestra dónde estás, y con la mejora Mapa del cruce también qué semáforo está en verde.",
+    "destacado": true
+  },
+  {
+    "version": "1.6.0",
+    "fecha": "2026-10-03",
+    "plataforma": "Linux 64-bit",
+    "archivo": "Semaphorer-linux-v1.6.0.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.6.0/Semaphorer-linux-v1.6.0.zip",
+    "tamanio_mb": 59,
+    "notas": "Nuevo minimapa en la esquina: muestra dónde estás, y con la mejora Mapa del cruce también qué semáforo está en verde.",
     "destacado": false
   }
 ]

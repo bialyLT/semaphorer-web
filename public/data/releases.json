@@ -1,5 +1,27 @@
 [
   {
+    "version": "1.6.0",
+    "fecha": "2026-10-03",
+    "cambios": [
+      {
+        "tipo": "Added",
+        "texto": "Nuevo minimapa en la esquina: muestra dónde estás, y con la mejora Mapa del cruce también qué semáforo está en verde."
+      },
+      {
+        "tipo": "Fixed",
+        "texto": "Los semáforos ahora son más cortos: el verde dura 12 segundos."
+      },
+      {
+        "tipo": "Fixed",
+        "texto": "Límite invisible del jugador ampliado y configurado dinámicamente."
+      },
+      {
+        "tipo": "Fixed",
+        "texto": "La pantalla completa ya no se sale al empezar una partida nueva."
+      }
+    ]
+  },
+  {
     "version": "1.5.7",
     "fecha": "2026-10-03",
     "cambios": [
