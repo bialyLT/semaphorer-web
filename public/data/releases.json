@@ -6,6 +6,14 @@
       {
         "tipo": "Fixed",
         "texto": "Las cinemáticas ahora se saltean manteniendo presionado."
+      },
+      {
+        "tipo": "Fixed",
+        "texto": "Borrar una partida ahora pide confirmación."
+      },
+      {
+        "tipo": "Fixed",
+        "texto": "Las partidas borradas ya no vuelven a aparecer."
       }
     ]
   },
