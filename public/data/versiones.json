@@ -47,7 +47,7 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.4/Semaphorer-windows-v1.5.4.zip",
     "tamanio_mb": 65,
     "notas": "Ya no podés caerte del mundo.",
-    "destacado": true
+    "destacado": false
   },
   {
     "version": "1.5.4",
@@ -57,6 +57,26 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.4/Semaphorer-linux-v1.5.4.zip",
     "tamanio_mb": 59,
     "notas": "Ya no podés caerte del mundo.",
+    "destacado": false
+  },
+  {
+    "version": "1.5.7",
+    "fecha": "2026-10-03",
+    "plataforma": "Windows 10/11 64-bit",
+    "archivo": "Semaphorer-windows-v1.5.7.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.7/Semaphorer-windows-v1.5.7.zip",
+    "tamanio_mb": 65,
+    "notas": "Las cinemáticas ahora se saltean manteniendo presionado.",
+    "destacado": true
+  },
+  {
+    "version": "1.5.7",
+    "fecha": "2026-10-03",
+    "plataforma": "Linux 64-bit",
+    "archivo": "Semaphorer-linux-v1.5.7.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.7/Semaphorer-linux-v1.5.7.zip",
+    "tamanio_mb": 59,
+    "notas": "Las cinemáticas ahora se saltean manteniendo presionado.",
     "destacado": false
   }
 ]

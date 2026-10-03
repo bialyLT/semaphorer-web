@@ -1,5 +1,15 @@
 [
   {
+    "version": "1.5.7",
+    "fecha": "2026-10-03",
+    "cambios": [
+      {
+        "tipo": "Fixed",
+        "texto": "Las cinemáticas ahora se saltean manteniendo presionado."
+      }
+    ]
+  },
+  {
     "version": "1.5.4",
     "fecha": "2026-10-03",
     "cambios": [
