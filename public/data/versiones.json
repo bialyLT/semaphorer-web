@@ -26,7 +26,7 @@
     "archivo": "Semaphorer-windows-v1.3.1.zip",
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.3.1/Semaphorer-windows-v1.3.1.zip",
     "tamanio_mb": 65,
-    "notas": "Cinemática intro: ahora se ve al protagonista tirado en la vereda y al tipo de oscuro que llega caminando hasta frenar al lado. Ya no aparece el limpiavidrios flotante (era el viewmodel de la cámara vieja) ni falta el cuerpo (en 1ª persona está oculto): el Player real se oculta y se usan dummies sin herramientas. HUD oculto durante el plano.",
+    "notas": "Se agregó una nueva cinemática en la intro del juego.",
     "destacado": true
   },
   {
@@ -36,7 +36,7 @@
     "archivo": "Semaphorer-linux-v1.3.1.zip",
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.3.1/Semaphorer-linux-v1.3.1.zip",
     "tamanio_mb": 59,
-    "notas": "Cinemática intro: ahora se ve al protagonista tirado en la vereda y al tipo de oscuro que llega caminando hasta frenar al lado. Ya no aparece el limpiavidrios flotante (era el viewmodel de la cámara vieja) ni falta el cuerpo (en 1ª persona está oculto): el Player real se oculta y se usan dummies sin herramientas. HUD oculto durante el plano.",
+    "notas": "Se agregó una nueva cinemática en la intro del juego.",
     "destacado": false
   }
 ]

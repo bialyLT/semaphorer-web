@@ -4,8 +4,8 @@
     "fecha": "2026-10-02",
     "cambios": [
       {
-        "tipo": "Fixed",
-        "texto": "Cinemática intro: ahora se ve al protagonista tirado en la vereda y al tipo de oscuro que llega caminando hasta frenar al lado. Ya no aparece el limpiavidrios flotante (era el viewmodel de la cámara vieja) ni falta el cuerpo (en 1ª persona está oculto): el Player real se oculta y se usan dummies sin herramientas. HUD oculto durante el plano."
+        "tipo": "Added",
+        "texto": "Se agregó una nueva cinemática en la intro del juego."
       }
     ]
   },
