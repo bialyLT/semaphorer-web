@@ -27,7 +27,7 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.3.1/Semaphorer-windows-v1.3.1.zip",
     "tamanio_mb": 65,
     "notas": "Se agregó una nueva cinemática en la intro del juego.",
-    "destacado": true
+    "destacado": false
   },
   {
     "version": "1.3.1",
@@ -37,6 +37,26 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.3.1/Semaphorer-linux-v1.3.1.zip",
     "tamanio_mb": 59,
     "notas": "Se agregó una nueva cinemática en la intro del juego.",
+    "destacado": false
+  },
+  {
+    "version": "1.5.4",
+    "fecha": "2026-10-03",
+    "plataforma": "Windows 10/11 64-bit",
+    "archivo": "Semaphorer-windows-v1.5.4.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.4/Semaphorer-windows-v1.5.4.zip",
+    "tamanio_mb": 65,
+    "notas": "Ya no podés caerte del mundo.",
+    "destacado": true
+  },
+  {
+    "version": "1.5.4",
+    "fecha": "2026-10-03",
+    "plataforma": "Linux 64-bit",
+    "archivo": "Semaphorer-linux-v1.5.4.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.5.4/Semaphorer-linux-v1.5.4.zip",
+    "tamanio_mb": 59,
+    "notas": "Ya no podés caerte del mundo.",
     "destacado": false
   }
 ]
