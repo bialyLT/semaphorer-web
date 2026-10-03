@@ -7,7 +7,7 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.2.0/Semaphorer-windows-v1.2.0.zip",
     "tamanio_mb": 65,
     "notas": "Tutorial jugable por objetivos y música de fondo.",
-    "destacado": true
+    "destacado": false
   },
   {
     "version": "1.2.0",
@@ -17,6 +17,26 @@
     "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.2.0/Semaphorer-linux-v1.2.0.zip",
     "tamanio_mb": 59,
     "notas": "Tutorial jugable por objetivos y música de fondo.",
+    "destacado": false
+  },
+  {
+    "version": "1.3.1",
+    "fecha": "2026-10-02",
+    "plataforma": "Windows 10/11 64-bit",
+    "archivo": "Semaphorer-windows-v1.3.1.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.3.1/Semaphorer-windows-v1.3.1.zip",
+    "tamanio_mb": 65,
+    "notas": "Cinemática intro: ahora se ve al protagonista tirado en la vereda y al tipo de oscuro que llega caminando hasta frenar al lado. Ya no aparece el limpiavidrios flotante (era el viewmodel de la cámara vieja) ni falta el cuerpo (en 1ª persona está oculto): el Player real se oculta y se usan dummies sin herramientas. HUD oculto durante el plano.",
+    "destacado": true
+  },
+  {
+    "version": "1.3.1",
+    "fecha": "2026-10-02",
+    "plataforma": "Linux 64-bit",
+    "archivo": "Semaphorer-linux-v1.3.1.zip",
+    "url": "https://github.com/bialyLT/semaphorer/releases/download/v1.3.1/Semaphorer-linux-v1.3.1.zip",
+    "tamanio_mb": 59,
+    "notas": "Cinemática intro: ahora se ve al protagonista tirado en la vereda y al tipo de oscuro que llega caminando hasta frenar al lado. Ya no aparece el limpiavidrios flotante (era el viewmodel de la cámara vieja) ni falta el cuerpo (en 1ª persona está oculto): el Player real se oculta y se usan dummies sin herramientas. HUD oculto durante el plano.",
     "destacado": false
   }
 ]
